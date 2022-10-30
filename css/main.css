@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #927dfc;
+}
+.wrapper{
+    width: 450px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 9px;
+}
+.wrapper .upload-box{
+    height: 225px;
+    border: 1px dashed black;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.upload-box p{
+    font-size: 1.06rem;
+    margin-top: 20px;
+}
+.wrapper.active .upload-box p{
+    display: none;
+}
+.wrapper.active .upload-box{
+    border: none;
+}
+.wrapper.active .upload-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.wrapper .content{
+    margin-top: 25px;
+}
+.content{
+    display: none;
+}
+.content .row{
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .column{
+    width: calc(100% / 2 - 15px);
+}
+.row .column label{
+    font-size: 1.06rem;
+}
+.sizes .column input{
+    height: 49px;
+    padding: 0px 15px;
+    border: 1px solid #aaa;
+    outline: none;
+    font-size: 20px;
+    margin-top: 7px;
+    width: 100%;
+    border-radius: 4px;
+}
+.sizes .column input:focus{
+    border: 2px solid #927dfc;
+    padding: 0px 14px;
+}
+.content .checkboxes{
+    margin-top: 20px;
+}
+.content .checkboxes .column{
+    display: flex;
+    align-items: center;
+}
+.content .checkboxes input{
+    width: 17px;
+    height: 17px;
+    accent-color: #927dfc;
+    margin-right: 9px;
+}
+.content .download-btn{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: 1px solid #927dfc;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #927dfc;
+    cursor: pointer;
+    transition: 1s;
+    text-transform: uppercase;
+}
+.content .download-btn:hover{
+    background-color: #5f46da;
+}
